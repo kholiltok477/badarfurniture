@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     echo "berhasil";
     }else {
         echo "gagal menyimpan: ". $koneksi->error;
-    }
+    } 
+    header("location: dashboard2.php");
 }
 ?>
