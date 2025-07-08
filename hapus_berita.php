@@ -23,6 +23,7 @@ if (isset($_GET['id'])) {
  $sql = "DELETE FROM berita WHERE id=$id";
  if ($vkoneksi->query($sql) === TRUE) {
  echo "Data berhasil dihapus!";
+ header("location: dashboard2.php");
  } else {
  echo "Error: " . $vkoneksi->error;
  }
